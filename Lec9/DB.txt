@@ -1,0 +1,32 @@
+데이터를 별도로 지속적으로 관리하기 위해서는 외부 Database가 필요함
+
+여러 종류가 있음
+
+SQL -> Col, Row 존재 (Table 형식)
+MySQL MariaDB PostgreSQL Aurora Sqlite 
+
+NoSQL -> Document 형식, 쉽게 변경이 가능
+MongoDB DynamoDB
+
+In Memory DB -> Performance 향상 목적
+Redis
+
+관계형 DB 는 
+SQL Query 를 통해 Data를 관리할수 있음
+
+INSERT SELECT UPDATE DELETE..
+
+ORM (Object Relational Mapping)
+DB를 객체로 추상화한것
+
+SQL을 직접 작성하는 대신, ORM 의 Method로 Data를 관리할 수 있음
+=> SQL보다 직관적으로 Data 관리 코드를 작성할 수 있음 
+-> 성능저하가 발생할 수 있음
+
+
+Sequelize가 대표적
+create find update destroy
+
+Model 객체 = DB Table을 추상화
+Model 객체에서 제공하는 ORM Method를 통해 DB Data 관리
+
